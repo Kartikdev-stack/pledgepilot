@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser";
 const initialize = (app) => {
   app.use(
     cors({
-      origin: "http://localhost:3000" | "https://pledgepilot.onrender.com",
+      origin:  "https://pledgepilot.onrender.com",
       credentials: true,
     })
   );
