@@ -5,7 +5,6 @@ import PersonIcon from "@mui/icons-material/Person";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { PaymentButton } from "../../Components/Payment/PaymentButton";
 import { RedirectButton } from "../../Components/Payment/RedirectButton";
-import FollowButton from "../../Components/Buttons/FollowButton";
 import { Milestone } from "../../Components/Milestone/Milestone";
 import { getUserInTheSession } from "../../Utils/SessionStorage";
 import "../../assets/ckEditorStyles/ckEditorStyles.css";
@@ -65,7 +64,6 @@ const CampaignPage = () => {
   }
 
   return (
-    <>
     <Box
       className="campaign-page"
       sx={{
@@ -176,21 +174,6 @@ const CampaignPage = () => {
         </Grid>
       </Grid>
     </Box>
-          </div>
-          {/* Add a milestone tracking UI here
-              Show a progress bar of how much current milestone is completed
-          */}
-          <MilestoneTracker campaignId={campaignId} />
-        </div>
-        {/* <p>User in the session: {sessionUser.firstName}</p> */}
-      </div>
-      <Greeting />
-      <hr />
-      <Milestone campaignId={campaignId} />
-      <hr />
-      {/* <Footer /> */}
-    </div>
-</>
   );
 };
 
