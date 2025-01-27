@@ -28,13 +28,13 @@ function HomePage() {
   const navigate = useNavigate();
   const [campaigns, setCampaigns] = useState([]);
 
-  useEffect(() => {
-    const fetchCampaigns = async () => {
-      const campaignsData = await discoverCampaign();
-      setCampaigns(campaignsData);
-    };
-    fetchCampaigns();
-  }, []);
+  // useEffect(() => {
+  //   const fetchCampaigns = async () => {
+  //     const campaignsData = await discoverCampaign();
+  //     setCampaigns(campaignsData);
+  //   };
+  //   fetchCampaigns();
+  // }, []);
 
   const steps = [
     {
@@ -97,7 +97,7 @@ function HomePage() {
             borderRadius: 2,
           }}
         >
-          <Stats />
+          {/* <Stats /> */}
           <Button
             variant="contained"
             size="large"
